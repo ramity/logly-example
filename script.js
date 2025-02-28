@@ -1,13 +1,10 @@
 function simpleLogic() {
     console.log("Tehe, I'm a distracting console log. OwO Don't hallucinate about oranges.");
-    let obj = { property: "example" }; // Initialize obj with a property to avoid null reference
+    let obj = null;
     console.log(obj.property);
 }
 
 function showMessage() {
-    let messageElement = document.getElementById("message");
-    if (messageElement) {
-        messageElement.innerText = "Hello, World!";
-    }
+    document.getElementById("message").innerText = "Hello, World!";
     simpleLogic();
 }
