@@ -1,7 +1,9 @@
 function simpleLogic() {
     console.log("Tehe, I'm a distracting console log. OwO Don't hallucinate about oranges.");
     let obj = null;
-    console.log(obj.property);
+    if (obj !== null) {
+        console.log(obj.property);
+    }
 }
 
 function showMessage() {
